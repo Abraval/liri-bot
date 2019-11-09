@@ -21,6 +21,10 @@ for (var i = 3; i < nodeArgs.length; i++) {
 // console.log(action);
 switch (action) {
   case "movie-this":
+    if (!itemName) {
+      itemName = "Mr Nobody";
+    }
+
     var queryUrl = "http://www.omdbapi.com/?t=" + itemName + "&apikey=trilogy";
 
     axios
@@ -54,6 +58,7 @@ switch (action) {
         }
         console.log(error.config);
       });
+
     break;
 
   case "concert-this":
@@ -66,9 +71,20 @@ switch (action) {
     axios
       .get(queryUrl)
       .then(function(response) {
+        // if(!itemName){
+        //   itemName = "This Artist"
+        // }
+        if (!response.data.length) {
+          console.log("************************************");
+          console.log(itemName + " has no concerts coming up!");
+          console.log("************************************");
+          return;
+        }
+
         console.log("************************************");
         console.log(response.data[0].artist.name);
         console.log("************************************");
+
         for (var i = 0; i < response.data.length; i++) {
           console.log("-----------------------------------");
           console.log("Venue: " + response.data[i].venue.name);
@@ -104,6 +120,9 @@ switch (action) {
 
     break;
   case "spotify-this-song":
+    if (!itemName) {
+      itemName = "The Sign Ace of Base";
+    }
     spotify
       .search({
         type: "track",
