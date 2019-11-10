@@ -23,7 +23,11 @@ will search the Bands in Town Artist Events API and render the following informa
 
 > Example:
 
-![Image description](img/concert-this.jpg)
+![Image description](img/concert-this.png)
+
+If the an artist/band that user provided has no concert coming up, LIRI would display the following:
+
+![Image description](img/concert-this-no-concert.png)
 **************************************
 ## INSTRUCTIONS
 ***************************************
