@@ -52,19 +52,19 @@ $ npm install
 
 ## Examples:
 
->### Search one (user is searching for Taylor Swift's concert info):
+>### Example 1 (user is searching for Taylor Swift's concert info):
 ```sh
 $ node liri.js concert-this Tylor Swift
 ```
 ![Image description](img/concert-this.png)
 
->### Search two (user is searching for Drake's concert info, but this artist has concerts coming up):
+>### Example 2 (user is searching for Drake's concert info, but this artist has concerts coming up):
 ```sh
 $ node liri.js concert-this Drake
 ```
 ![Image description](img/concert-this-no-concert.png)
 
->### Search three (user is searching for Casablanca movie info and Lion King movie info)
+>### Example 3 (user is searching for Casablanca movie info and Lion King movie info):
 ```sh
 $ node liri.js movie-this Casablanca
 ```
@@ -74,11 +74,28 @@ $ node liri.js movie-this Lion King
 ```
 ![Image description](img/movie-this.png)
 
->### Search four (user didn't provide a movie name). Will search for Mr.Nobody by default
+>### Example 4 (user didn't provide a movie name). Will search for Mr.Nobody by default:
 ```sh
 $ node liri.js movie-this
 ```
 ![Image description](img/movie-this-no-input.png)
+
+>### Example 5 (user is searching for I Believe in You song info):
+```sh
+$ node liri.js spotify-this-song I Believe in You
+```
+![Image description](img/spotify-this-song.png)
+
+>### Example 6 (user didn't provide a song name). Will search for The Sign by Ace of Base by default:
+```sh
+$ node liri.js spotify-this-song
+```
+![Image description](img/spotify-this-song-no-input.png)
+
+>### Example 7 LIRI will run the command listed in random.txt (in this case 'spotify-this-song,"I Want it That Way"'):
+```sh
+$ node liri.js do-what-it-says
+```
 
 
 
