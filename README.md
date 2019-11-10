@@ -100,6 +100,10 @@ $ node liri.js spotify-this-song
 ```sh
 $ node liri.js do-what-it-says
 ```
+![Image description](img/do-what-it-says.png)
+
+********
+Try it out and enjoy
 
 
 
