@@ -8,6 +8,15 @@ LIRI is a command line node app that will search Spotify for songs, Bands in Tow
 
 I used switch statements to call an appropriate API based on user's input.
 
+## TECHNOLOGIES USED
+
+- Node.js
+- Axios
+- Moment.js
+- Spotify API
+- OMDB API 
+- Bands In Town API
+
 ## INSTRUCTIONS
 
 Open the terminal in your root derictory. Once there, run these commands:
@@ -34,34 +43,42 @@ Do not wrap the artist, song or movie name in quotes
 ***
 ***
 ### ! IMPORTANT 
-to use this application in the root directory run:
+- To use this application in the root directory, run:
 ```sh
 $ npm install 
 ```
+- Create .env file to hold your Spotify ID and Spotify Secret (get your Spotify credentials by regestering your app on Spotify API's website). 
 ***
-
-## TECHNOLOGIES USED
-
-- Node.js
-- Axios
-- Moment.js
-- Spotify API
-- OMDB API 
-- Bands In Town API
 
 ## Examples:
 
-### Search one (user is searching for Taylor Swift's concert info):
+>### Search one (user is searching for Taylor Swift's concert info):
 ```sh
 $ node liri.js concert-this Tylor Swift
 ```
 ![Image description](img/concert-this.png)
 
-### Search two (user is searching for Drake's concert info, but this artist has concerts coming up):
+>### Search two (user is searching for Drake's concert info, but this artist has concerts coming up):
 ```sh
 $ node liri.js concert-this Drake
 ```
 ![Image description](img/concert-this-no-concert.png)
+
+>### Search three (user is searching for Casablanca movie info and Lion King movie info)
+```sh
+$ node liri.js movie-this Casablanca
+```
+...
+```sh
+$ node liri.js movie-this Lion King
+```
+![Image description](img/movie-this.png)
+
+>### Search four (user didn't provide a movie name). Will search for Mr.Nobody by default
+```sh
+$ node liri.js movie-this
+```
+![Image description](img/movie-this-no-input.png)
 
 
 
