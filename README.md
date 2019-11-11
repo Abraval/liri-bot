@@ -105,7 +105,7 @@ $ node liri.js do-what-it-says
 ********
 WATCH DEMONSTRATION VIDEO HERE
 
-[LIRI BOT Demo]: (https://drive.google.com/file/d/1-ZA7oyI-ffCe_U5eszpBdnKdiz2vyP9F/view)
+<a href="https://drive.google.com/file/d/1-ZA7oyI-ffCe_U5eszpBdnKdiz2vyP9F/view">LIRI BOT Demo</a>
 
 ********
 Try it out and enjoy
