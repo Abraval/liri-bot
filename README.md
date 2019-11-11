@@ -59,7 +59,7 @@ $ node liri.js concert-this Tylor Swift
 ```
 ![Image description](img/concert-this.png)
 
->### Example 2: user is searching for Drake's concert info, but this artist has concerts coming up
+>### Example 2: user is searching for Drake's concert info, but this artist has no concerts coming up
 ```sh
 $ node liri.js concert-this Drake
 ```
@@ -101,6 +101,11 @@ $ node liri.js spotify-this-song
 $ node liri.js do-what-it-says
 ```
 ![Image description](img/do-what-it-says.png)
+
+********
+WATCH DEMONSTRATION VIDEO HERE
+
+[LIRI BOT Demo]: https://drive.google.com/file/d/1-ZA7oyI-ffCe_U5eszpBdnKdiz2vyP9F/view
 
 ********
 Try it out and enjoy
